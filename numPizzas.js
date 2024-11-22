@@ -8,6 +8,12 @@ const orders = [
     { wings: 12, type: ORDER_TYPES.WINGS },
 ];
 
+const orders_just_pizza = [
+    { pizzas: 3, type: ORDER_TYPES.PIZZA },
+    { pizzas: 12, type: ORDER_TYPES.PIZZA },
+];
+
+
 function numberOfPizzas(orders) {
     //console.log(orders.length)
     totalCount = 0
@@ -20,5 +26,6 @@ function numberOfPizzas(orders) {
     return totalCount;
 }
 
-c = numberOfPizzas(orders)
-console.log(c)
+console.log(numberOfPizzas(orders))
+
+console.log(numberOfPizzas(orders_just_pizza))
